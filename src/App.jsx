@@ -26,7 +26,13 @@ import {
   Compass,
   Info,
   Clock,
-  Sparkles
+  Sparkles,
+  Database,
+  Newspaper,
+  Globe,
+  Share2,
+  Heart,
+  ExternalLink
 } from 'lucide-react';
 
 const CASES_DATA = {
@@ -71,6 +77,70 @@ const CASES_DATA = {
       { text: "klarifikasi", weight: 18 }
     ],
     topicSummary: "Topik utama berkaitan erat dengan akuntabilitas penerima beasiswa dan tuntutan keadilan sosial terhadap pengelolaan dana publik.",
+    primaryData: [
+      {
+        id: "p1",
+        username: "@budi_santoso",
+        platform: "Twitter/X",
+        text: "Sangat kecewa sih, harusnya yang dapet beasiswa itu yang beneran mau balik dan mengabdi buat negeri sendiri. Pajak kita ga murah. 😢",
+        sentiment: "Negatif",
+        emotion: "Kecewa",
+        time: "5m yang lalu"
+      },
+      {
+        id: "p2",
+        username: "@diana_putri",
+        platform: "TikTok",
+        text: "Tapi emang sistem pengawasannya gimana ya? Masa gak ada sanksi tegas buat yang melanggar kontrak pengabdian?",
+        sentiment: "Netral",
+        emotion: "Sinis",
+        time: "14m yang lalu"
+      },
+      {
+        id: "p3",
+        username: "@alumni_proud",
+        platform: "Twitter/X",
+        text: "Sebagai alumni, mayoritas dari kami kembali kok. Sedih rasanya karena nila setitik, rusak susu sebelanga. Jangan pukul rata semua.",
+        sentiment: "Positif",
+        emotion: "Membela",
+        time: "32m yang lalu"
+      },
+      {
+        id: "p4",
+        username: "@rakyat_biasa",
+        platform: "Instagram",
+        text: "Uang rakyat dipakai buat sekolah mereka di luar negeri biar elit, tapi malah gak mau kontribusi balik. Ini ketidakadilan sosial!",
+        sentiment: "Negatif",
+        emotion: "Marah",
+        time: "1j yang lalu"
+      }
+    ],
+    secondaryData: [
+      {
+        id: "s1",
+        media: "Kompas.com",
+        title: "Kemenkeu Evaluasi Aturan Sanksi Administratif Penerima Beasiswa Negara",
+        impact: "Tinggi",
+        impactColor: "bg-red-500",
+        time: "10m yang lalu"
+      },
+      {
+        id: "s2",
+        media: "Kumparan",
+        title: "Polemik Kewajiban Kontribusi Alumni Beasiswa: Antara Etika Moral dan Aturan Hukum",
+        impact: "Sedang",
+        impactColor: "bg-amber-500",
+        time: "42m yang lalu"
+      },
+      {
+        id: "s3",
+        media: "Tempo.co",
+        title: "Analisis Anggaran Pendidikan: Seberapa Efektif Penyerapan Dana Beasiswa di Luar Negeri?",
+        impact: "Tinggi",
+        impactColor: "bg-red-500",
+        time: "2j yang lalu"
+      }
+    ],
     timeline: [
       { day: 'Hari 1', title: 'Konten Pertama Muncul', desc: 'Unggahan dari tokoh berpengaruh mempertanyakan kewajiban kontribusi alumni penerima beasiswa.', type: 'info' },
       { day: 'Hari 2', title: 'Mulai Dibagikan Luas', desc: 'Akun agregator membagikan infografis terkait penggunaan dana beasiswa dan kewajiban kontribusi alumni.', type: 'warning' },
@@ -133,6 +203,70 @@ const CASES_DATA = {
       { text: "revisi aturan", weight: 15 }
     ],
     topicSummary: "Diskusi dominan berputar di sekitar kepastian hukum versus pentingnya merangkul talenta terbaik bangsa di kancah global.",
+    primaryData: [
+      {
+        id: "p1",
+        username: "@diaspora_hacker",
+        platform: "Twitter/X",
+        text: "Indonesia bakal rugi besar kalau kehilangan talenta riset sehebat dia cuma gara-gara urusan administrasi paspor kaku begini.",
+        sentiment: "Positif",
+        emotion: "Membela",
+        time: "15m yang lalu"
+      },
+      {
+        id: "p2",
+        username: "@hukum_sentris",
+        platform: "Twitter/X",
+        text: "Hukum ya hukum. Konstitusi kita belum membolehkan dwi-kewarganegaraan secara penuh. Semuanya harus tertib aturan dong.",
+        sentiment: "Negatif",
+        emotion: "Sinis",
+        time: "28m yang lalu"
+      },
+      {
+        id: "p3",
+        username: "@netizen_smart",
+        platform: "Instagram",
+        text: "Semoga ada jalan tengah seperti pemberian visa talenta khusus, biar keahliannya tetap bisa dimaksimalkan buat riset nasional kita.",
+        sentiment: "Netral",
+        emotion: "Membela",
+        time: "55m yang lalu"
+      },
+      {
+        id: "p4",
+        username: "@nasionalis_sejati",
+        platform: "TikTok",
+        text: "Nasionalisme itu dibuktikan dengan kesetiaan paspor merah putih. Ngaku cinta NKRI tapi milih paspor asing, aneh aja.",
+        sentiment: "Negatif",
+        emotion: "Kecewa",
+        time: "2j yang lalu"
+      }
+    ],
+    secondaryData: [
+      {
+        id: "s1",
+        media: "DetikNews",
+        title: "Pemerintah Mulai Kaji Opsi Implementasi 'Talent Visa' Bagi Diaspora Unggulan",
+        impact: "Tinggi",
+        impactColor: "bg-red-500",
+        time: "25m yang lalu"
+      },
+      {
+        id: "s2",
+        media: "Republika",
+        title: "Mencari Celah Regulasi Baru: Bagaimana Cara Negara Lain Mempertahankan Talenta Globalnya?",
+        impact: "Sedang",
+        impactColor: "bg-amber-500",
+        time: "1j yang lalu"
+      },
+      {
+        id: "s3",
+        media: "CNN Indonesia",
+        title: "Ahli Hukum Tata Negara Sebut Revisi Aturan Kewarganegaraan Perlu Kajian Mendalam",
+        impact: "Tinggi",
+        impactColor: "bg-red-500",
+        time: "3j yang lalu"
+      }
+    ],
     timeline: [
       { day: 'Hari 1', title: 'Unggahan Kasus', desc: 'Identitas seorang peneliti berprestasi dengan status kewarganegaraan ganda mulai diekspos.', type: 'info' },
       { day: 'Hari 2', title: 'Diskusi Hukum', desc: 'Netizen akademisi membedah regulasi UU Kewarganegaraan Indonesia yang berlaku.', type: 'warning' },
@@ -153,10 +287,60 @@ const CASES_DATA = {
   }
 };
 
+const LIVE_POOLS = {
+  beasiswa: [
+    { username: "@pajak_garuda", platform: "Twitter/X", text: "Pajak rakyat itu buat kemajuan nasional, bukan buat disalahgunakan individu yang enggan berkontribusi kembali.", sentiment: "Negatif", emotion: "Marah" },
+    { username: "@alumni_bergerak", platform: "Instagram", text: "Mari kita buka forum dialog terbuka agar kesalahpahaman data ini bisa segera diluruskan secara elegan.", sentiment: "Positif", emotion: "Membela" },
+    { username: "@dosen_muda", platform: "Twitter/X", text: "Bagaimana cara melacak kontribusi alumni jika data integrasi instansi belum maksimal?", sentiment: "Netral", emotion: "Sinis" },
+    { username: "@anak_bangsa_id", platform: "TikTok", text: "Sedih liat narasi saling serang di sosmed. Lebih baik instansi jelaskan sistem penegakan kontrak alumni secara presisi.", sentiment: "Positif", emotion: "Membela" },
+    { username: "@kritik_publik", platform: "Twitter/X", text: "Ketidakadilan ini yang bikin masyarakat skeptis. Keadilan penyaluran dana beasiswa harus setara!", sentiment: "Negatif", emotion: "Kecewa" },
+    { username: "@ilmiah_reform", platform: "Instagram", text: "Seharusnya instansi terkait merilis diagram keterbukaan info berkala di website resmi mereka.", sentiment: "Netral", emotion: "Sinis" }
+  ],
+  kewarganegaraan: [
+    { username: "@akademisi_global", platform: "Twitter/X", text: "Indonesia rugi besar kalau talenta global kaliber dunia terganjal administrasi kaku dwi-kewarganegaraan.", sentiment: "Positif", emotion: "Membela" },
+    { username: "@hukum_daulat", platform: "Instagram", text: "Konstitusi adalah panglima. Aturan pelarangan paspor ganda dibentuk untuk kedaulatan NKRI murni.", sentiment: "Negatif", emotion: "Sinis" },
+    { username: "@indonesia_talent", platform: "TikTok", text: "Semoga skema Talent Visa yang dijanjikan segera terealisasi tanpa birokrasi berbelit-belit.", sentiment: "Positif", emotion: "Membela" },
+    { username: "@netizen_netral", platform: "Twitter/X", text: "Apakah ada skema pajak khusus bagi diaspora jika mereka diberikan kelonggaran status kewarganegaraan?", sentiment: "Netral", emotion: "Sinis" },
+    { username: "@nasionalis_modern", platform: "Twitter/X", text: "Nasionalisme diukur dari seberapa besar kontribusi nyata kita untuk kemakmuran rakyat, bukan cuma lembar paspor.", sentiment: "Positif", emotion: "Membela" }
+  ]
+};
+
 export default function App() {
   const [activeCaseId, setActiveCaseId] = useState('beasiswa');
   const currentCase = CASES_DATA[activeCaseId];
 
+  const [liveComments, setLiveComments] = useState(currentCase.primaryData);
+
+  // React Hook untuk simulasi live feed yang terintegrasi NLP model
+  React.useEffect(() => {
+    // Setiap kali ganti kasus, reset feed dengan data default-nya
+    setLiveComments(currentCase.primaryData);
+
+    let counter = 0;
+    const interval = setInterval(() => {
+      const pool = LIVE_POOLS[activeCaseId];
+      if (pool && pool.length > 0) {
+        const liveCommentTemplate = pool[counter % pool.length];
+        const newLiveItem = {
+          id: `live-${Date.now()}-${counter}`,
+          ...liveCommentTemplate,
+          time: "Baru saja"
+        };
+
+        setLiveComments((prev) => {
+          // Tambahkan komentar baru di paling atas, batasi total komentar agar tidak lemot
+          const updated = [newLiveItem, ...prev];
+          return updated.slice(0, 10); // Menjaga max 10 komentar di feed
+        });
+
+        counter++;
+      }
+    }, 4500); // Trigger komentar masuk baru setiap 4.5 detik
+
+    return () => clearInterval(interval);
+  }, [activeCaseId]);
+
+  // Helper untuk menentukan warna level resiko
   const getRiskColor = (score) => {
     if (score <= 40) return { label: "Aman", bg: "bg-emerald-500", text: "text-emerald-500", bgLight: "bg-emerald-50/70", border: "border-emerald-200" };
     if (score <= 60) return { label: "Perlu Dipantau", bg: "bg-amber-400", text: "text-amber-500", bgLight: "bg-amber-50/70", border: "border-amber-200" };
@@ -167,10 +351,28 @@ export default function App() {
   const riskMeta = getRiskColor(currentCase.metrics.riskScore);
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans selection:bg-cyan-100 selection:text-cyan-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/40 to-cyan-50/50 text-slate-800 font-sans selection:bg-cyan-100 selection:text-cyan-900">
       
+      {/* Dynamic Keyframe Animation Injection */}
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes liveSlideIn {
+          from {
+            opacity: 0;
+            transform: translateY(-24px);
+            background-color: rgb(236 254 255); /* Cyan 50 alert */
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-new-comment {
+          animation: liveSlideIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+      `}} />
+
       {/* ================= HEADER PART ================= */}
-      <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-xs">
+      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-blue-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             
@@ -243,6 +445,16 @@ export default function App() {
       {/* ================= MAIN CONTENT ================= */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6 sm:space-y-8">
         
+        {/* Hero Summary Block */}
+        <div className="bg-gradient-to-r from-blue-950 via-blue-900 to-cyan-800 text-white rounded-2xl p-6 shadow-sm overflow-hidden relative">
+          <div className="absolute right-0 top-0 w-64 h-64 bg-cyan-400/10 rounded-full blur-3xl"></div>
+          <p className="text-xs font-semibold text-cyan-200 uppercase tracking-widest">Public Trust Early Warning System</p>
+          <h2 className="text-2xl sm:text-3xl font-black mt-2">Pemantauan Risiko Kepercayaan Publik</h2>
+          <p className="text-sm text-blue-100 mt-2 max-w-3xl">
+            Dashboard ini membantu lembaga membaca sentimen, emosi, topik dominan, dan fase viralitas isu secara lebih cepat, proporsional, dan berbasis data.
+          </p>
+        </div>
+
         {/* Live Stream Alert Bar & Methodology */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           
@@ -277,15 +489,16 @@ export default function App() {
 
         </div>
 
-        {/* 2. RINGKASAN METRIK UTAMA (5 Cards) */}
+        {/* 2. RINGKASAN METRIK UTAMA (5 Cards with Colorful Top Borders) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
           
           {/* Card 1: Risk Score */}
-          <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs hover:shadow-md transition-shadow relative overflow-hidden group">
+          <div className="bg-gradient-to-br from-white to-red-50/60 p-5 rounded-xl border border-red-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+            <div className="absolute top-0 left-0 right-0 h-1 bg-red-600"></div>
             <div className="absolute right-0 top-0 w-16 h-16 bg-slate-50 rounded-bl-full flex items-center justify-center text-slate-400 group-hover:bg-slate-100 transition-colors">
               <Activity className="w-5 h-5" />
             </div>
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Public Trust Risk Score</p>
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mt-1">Public Trust Risk Score</p>
             <div className="mt-3 flex items-baseline gap-2">
               <span className={`text-4xl font-extrabold tracking-tight ${riskMeta.text}`}>
                 {currentCase.metrics.riskScore}
@@ -301,10 +514,11 @@ export default function App() {
 
           {/* Card 2: Sentimen Negatif */}
           <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs hover:shadow-md transition-shadow relative overflow-hidden group">
+            <div className="absolute top-0 left-0 right-0 h-1 bg-red-500"></div>
             <div className="absolute right-0 top-0 w-16 h-16 bg-slate-50 rounded-bl-full flex items-center justify-center text-slate-400 group-hover:bg-slate-100 transition-colors">
               <TrendingUp className="w-5 h-5 text-red-500" />
             </div>
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Sentimen Negatif</p>
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mt-1">Sentimen Negatif</p>
             <div className="mt-3 flex items-baseline gap-2">
               <span className="text-4xl font-extrabold tracking-tight text-red-600">
                 {currentCase.metrics.negativeSentiment}%
@@ -318,10 +532,11 @@ export default function App() {
 
           {/* Card 3: Emosi Dominan */}
           <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs hover:shadow-md transition-shadow relative overflow-hidden group">
+            <div className="absolute top-0 left-0 right-0 h-1 bg-amber-500"></div>
             <div className="absolute right-0 top-0 w-16 h-16 bg-slate-50 rounded-bl-full flex items-center justify-center text-slate-400 group-hover:bg-slate-100 transition-colors">
               <Frown className="w-5 h-5 text-amber-500" />
             </div>
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Emosi Dominan</p>
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mt-1">Emosi Dominan</p>
             <div className="mt-3">
               <span className="text-xl font-bold tracking-tight text-slate-800 line-clamp-1 block leading-tight">
                 {currentCase.metrics.dominantEmotion}
@@ -335,10 +550,11 @@ export default function App() {
 
           {/* Card 4: Topik Dominan */}
           <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs hover:shadow-md transition-shadow relative overflow-hidden group">
+            <div className="absolute top-0 left-0 right-0 h-1 bg-cyan-600"></div>
             <div className="absolute right-0 top-0 w-16 h-16 bg-slate-50 rounded-bl-full flex items-center justify-center text-slate-400 group-hover:bg-slate-100 transition-colors">
               <MessageSquare className="w-5 h-5" />
             </div>
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Topik Utama</p>
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mt-1">Topik Utama</p>
             <div className="mt-3">
               <span className="text-base font-bold tracking-tight text-slate-800 line-clamp-2 leading-snug">
                 {currentCase.metrics.dominantTopic}
@@ -349,10 +565,11 @@ export default function App() {
 
           {/* Card 5: Fase Viral */}
           <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs hover:shadow-md transition-shadow relative overflow-hidden group">
+            <div className="absolute top-0 left-0 right-0 h-1 bg-blue-700"></div>
             <div className="absolute right-0 top-0 w-16 h-16 bg-slate-50 rounded-bl-full flex items-center justify-center text-slate-400 group-hover:bg-slate-100 transition-colors">
               <Clock className="w-5 h-5" />
             </div>
-            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Fase Viralitas</p>
+            <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mt-1">Fase Viralitas</p>
             <div className="mt-3">
               <span className="text-2xl font-black text-blue-950 block">
                 {currentCase.metrics.viralPhase}
@@ -489,6 +706,140 @@ export default function App() {
 
         </div>
 
+        {/* ==================================================== */}
+        {/* NEW! BRAND-NEW DATA COLLECTION PANEL (PRIMARY & SECONDARY) */}
+        {/* ==================================================== */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          
+          {/* A. DATA PRIMER: Grassroots Social Media Comments Feed */}
+          <div className="bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div className="border-b border-slate-100 pb-4 mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <Database className="w-5 h-5 text-indigo-600" />
+                    Koleksi Data Primer (Akar Rumput)
+                  </h3>
+                  <p className="text-xs text-slate-500">Sinyal percakapan real-time yang dipanen langsung dari media sosial</p>
+                </div>
+                <div className="flex items-center gap-1.5 shrink-0 self-start sm:self-center">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  </span>
+                  <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-indigo-50 text-indigo-700 border border-indigo-100">
+                    Live Stream &bull; NLP Parser
+                  </span>
+                </div>
+              </div>
+
+              {/* Feed List (Simulated Live Chat Interface) */}
+              <div className="space-y-3.5 max-h-96 overflow-y-auto pr-1">
+                {liveComments.map((comment) => (
+                  <div 
+                    key={comment.id} 
+                    className={`p-3 rounded-lg border border-slate-150 transition-colors text-xs ${
+                      comment.id.toString().startsWith('live-') 
+                        ? 'animate-new-comment bg-cyan-50/40 border-cyan-200/60 shadow-xs' 
+                        : 'bg-slate-50 hover:bg-slate-100/75'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between gap-2 mb-1.5">
+                      <div className="flex items-center gap-1.5">
+                        <span className="font-bold text-slate-800">{comment.username}</span>
+                        <span className="text-slate-400">•</span>
+                        <span className={`px-1.5 py-0.5 rounded text-[10px] font-semibold ${
+                          comment.platform === 'Twitter/X' ? 'bg-sky-50 text-sky-700 border border-sky-200' :
+                          comment.platform === 'TikTok' ? 'bg-neutral-900 text-white' : 'bg-pink-50 text-pink-700 border border-pink-200'
+                        }`}>
+                          {comment.platform}
+                        </span>
+                        {comment.id.toString().startsWith('live-') && (
+                          <span className="bg-emerald-100 text-emerald-800 text-[9px] font-black tracking-widest px-1.5 rounded animate-pulse">
+                            NLP PROCESSED
+                          </span>
+                        )}
+                      </div>
+                      <span className={`text-[10px] ${comment.id.toString().startsWith('live-') ? 'text-cyan-600 font-bold' : 'text-slate-400'}`}>
+                        {comment.time}
+                      </span>
+                    </div>
+                    
+                    <p className="text-slate-600 mb-2 italic leading-relaxed">
+                      "{comment.text}"
+                    </p>
+
+                    <div className="flex items-center gap-2 pt-1.5 border-t border-slate-200/50">
+                      <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${
+                        comment.sentiment === 'Positif' ? 'bg-emerald-100 text-emerald-800' :
+                        comment.sentiment === 'Negatif' ? 'bg-rose-100 text-rose-800' : 'bg-slate-200 text-slate-800'
+                      }`}>
+                        Sentimen: {comment.sentiment}
+                      </span>
+                      <span className="text-slate-300">|</span>
+                      <span className="text-slate-500 font-medium text-[10px]">
+                        Emosi: <strong className="text-slate-800">{comment.emotion}</strong>
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-4 pt-3.5 border-t border-slate-100 text-[11px] text-slate-400 flex items-center gap-1.5">
+              <Info className="w-3.5 h-3.5 text-indigo-500 shrink-0" />
+              <span>Data primer diklasifikasi otomatis menggunakan library tokenizer lokal & model IndoBERTweet.</span>
+            </div>
+          </div>
+
+          {/* B. DATA SEKUNDER: Portal Media & News Articles Monitoring */}
+          <div className="bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div className="border-b border-slate-100 pb-4 mb-4 flex items-center justify-between">
+                <div>
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <Newspaper className="w-5 h-5 text-emerald-600" />
+                    Koleksi Data Sekunder (Media Massa)
+                  </h3>
+                  <p className="text-xs text-slate-500">Artikel opini dan berita formal yang terindeks sistem crawler nasional</p>
+                </div>
+                <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-emerald-50 text-emerald-700 border border-emerald-100">
+                  Mass Media Crawl
+                </span>
+              </div>
+
+              {/* Media Articles List */}
+              <div className="space-y-3 max-h-96 overflow-y-auto pr-1">
+                {currentCase.secondaryData.map((article) => (
+                  <div key={article.id} className="p-3.5 bg-slate-50 hover:bg-slate-100/75 rounded-lg border border-slate-150 transition-colors text-xs flex items-start gap-3">
+                    <div className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${article.impactColor}`}></div>
+                    <div className="space-y-1 w-full">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="font-bold text-emerald-700 text-[10px] uppercase tracking-wider">{article.media}</span>
+                        <span className="text-slate-400 text-[10px]">{article.time}</span>
+                      </div>
+                      <h4 className="font-bold text-slate-800 text-xs sm:text-sm line-clamp-2 hover:underline cursor-pointer flex items-center gap-1">
+                        {article.title}
+                        <ExternalLink className="w-3.5 h-3.5 text-slate-400 shrink-0 inline" />
+                      </h4>
+                      <div className="flex items-center gap-2 pt-1">
+                        <span className="text-slate-400 text-[10px]">Bobot Dampak:</span>
+                        <span className="font-bold text-slate-700 text-[10px]">{article.impact}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-4 pt-3.5 border-t border-slate-100 text-[11px] text-slate-400 flex items-center gap-1.5">
+              <Globe className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+              <span>Sistem mengukur bobot dampak berdasarkan sirkulasi media dan kutipan kutub opini eksekutif.</span>
+            </div>
+          </div>
+
+        </div>
+
         {/* ================= TOPICS & TIMELINE ================= */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           
@@ -508,11 +859,11 @@ export default function App() {
                 {currentCase.topics.map((topic, index) => {
                   let fontStyle = "text-xs px-2.5 py-1 bg-white text-slate-600 border border-slate-200";
                   if (topic.weight >= 30) {
-                    fontStyle = "text-lg font-bold px-4 py-2 bg-blue-900 text-white shadow-xs";
+                    fontStyle = "text-lg font-bold bg-blue-900 text-white shadow-xs";
                   } else if (topic.weight >= 25) {
-                    fontStyle = "text-base font-semibold px-3 py-1.5 bg-cyan-100 text-blue-950 border border-cyan-200";
+                    fontStyle = "text-base font-semibold bg-cyan-100 text-blue-950 border border-cyan-200";
                   } else if (topic.weight >= 20) {
-                    fontStyle = "text-sm font-medium px-3 py-1 bg-slate-100 text-slate-800 border border-slate-200";
+                    fontStyle = "text-sm font-medium bg-slate-100 text-slate-800 border border-slate-200";
                   }
 
                   return (
